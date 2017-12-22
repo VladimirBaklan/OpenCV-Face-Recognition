@@ -1,0 +1,21 @@
+﻿Построение начато 22.12.2017 10:16:03.
+     1>Проект "D:\OpenComputerView\FaceDetection\FaceDetection\FaceDetection.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         D:\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ID:\opencv\build\include /ID:\opencv\build\include\opencv /ID:\opencv\build\include\opencv2 /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
+         Source.cpp
+       Link:
+         D:\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\OpenComputerView\FaceDetection\Debug\FaceDetection.exe" /INCREMENTAL /NOLOGO /LIBPATH:D:\opencv\build\x64\vc14\lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib opencv_world320.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\OpenComputerView\FaceDetection\Debug\FaceDetection.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\OpenComputerView\FaceDetection\Debug\FaceDetection.lib" /MACHINE:X86 Debug\Source.obj
+     1>Source.obj : error LNK2019: ссылка на неразрешенный внешний символ "private: char * __thiscall cv::String::allocate(unsigned int)" (?allocate@String@cv@@AAEPADI@Z) в функции "public: __thiscall cv::String::String(char const *)" (??0String@cv@@QAE@PBD@Z)
+     1>Source.obj : error LNK2019: ссылка на неразрешенный внешний символ "private: void __thiscall cv::String::deallocate(void)" (?deallocate@String@cv@@AAEXXZ) в функции "public: __thiscall cv::String::~String(void)" (??1String@cv@@QAE@XZ)
+     1>Source.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: __thiscall cv::CascadeClassifier::CascadeClassifier(void)" (??0CascadeClassifier@cv@@QAE@XZ) в функции _main
+     1>Source.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: __thiscall cv::CascadeClassifier::~CascadeClassifier(void)" (??1CascadeClassifier@cv@@QAE@XZ) в функции _main
+     1>Source.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: bool __thiscall cv::CascadeClassifier::load(class cv::String const &)" (?load@CascadeClassifier@cv@@QAE_NABVString@2@@Z) в функции _main
+     1>Source.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: __thiscall cv::VideoCapture::VideoCapture(int)" (??0VideoCapture@cv@@QAE@H@Z) в функции _main
+     1>Source.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: virtual __thiscall cv::VideoCapture::~VideoCapture(void)" (??1VideoCapture@cv@@UAE@XZ) в функции _main
+     1>Source.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: virtual bool __thiscall cv::VideoCapture::isOpened(void)const " (?isOpened@VideoCapture@cv@@UBE_NXZ) в функции _main
+     1>D:\OpenComputerView\FaceDetection\Debug\FaceDetection.exe : fatal error LNK1120: неразрешенных внешних элементов: 8
+     1>Построение проекта "D:\OpenComputerView\FaceDetection\FaceDetection\FaceDetection.vcxproj" завершено (целевые объекты Build) с ошибкой.
+
+Сбой построения.
+
+Затраченное время: 00:00:02.72
