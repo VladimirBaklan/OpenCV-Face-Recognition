@@ -1,4 +1,4 @@
-﻿Построение начато 22.12.2017 16:33:32.
+﻿Построение начато 24.12.2017 12:47:35.
      1>Проект "D:\OpenComputerView\FaceDetection\FaceDetection\FaceDetection.vcxproj" в узле 2 (целевые объекты Build).
      1>ClCompile:
          D:\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /ID:\opencv\build\include /ID:\opencv\build\include\opencv /ID:\opencv\build\include\opencv2 /Zi /nologo /W3 /WX- /O2 /Oi /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc110.pdb" /Gd /TP /errorReport:prompt Source.cpp
@@ -12,4 +12,4 @@
 
 Построение успешно завершено.
 
-Затраченное время: 00:00:02.43
+Затраченное время: 00:00:02.73

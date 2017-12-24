@@ -7,6 +7,7 @@
 
 cv::Mat drawFaces(cv::Mat frame, std::vector<cv::Rect> faces);
 std::vector<cv::Rect> detectFace(cv::Mat frame,cv::CascadeClassifier faceCascade);
+void detectAndShow(cv::Mat frame,cv::CascadeClassifier faceCascade,cv::CascadeClassifier eyesCascade);
 
 int main(){
 	setlocale(LC_ALL,"");
@@ -16,7 +17,7 @@ int main(){
 	try{
 		if(!capture.isOpened())
 			throw (std::string("Error opening video stream"));
-		if(!matchTemplate.load("D:/OpenComputerView/FaceDetection/FaceDetection/haarcascade_frontalface_default.xml"))
+		if(!matchTemplate.load("resources/haarcascade_frontalface_default.xml"))
 			throw (std::string("Error opening template"));
 	}catch(std::string error){
 		std::cout<<error<<std::endl;
@@ -29,7 +30,7 @@ int main(){
 	while(capture.isOpened()){
 		capture>>frame;
 
-		cv::cvtColor(frame,grayscale,cv::COLOR_RGB2GRAY);
+		cv::cvtColor(frame,grayscale,cv::COLOR_BGR2GRAY);
 		cv::equalizeHist(grayscale,grayscale);
 
 		std::vector<cv::Rect> faces = detectFace(grayscale,matchTemplate);
